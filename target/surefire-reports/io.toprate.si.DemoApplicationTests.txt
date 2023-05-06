@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: io.toprate.si.DemoApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.594 s <<< FAILURE! - in io.toprate.si.DemoApplicationTests
+contextLoads  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cartController' defined in file [C:\Users\Dekisugi Hidetoshi\Desktop\Quanlibanhang\target\classes\io\toprate\si\controller\cartController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cartService' defined in file [C:\Users\Dekisugi Hidetoshi\Desktop\Quanlibanhang\target\classes\io\toprate\si\service\cartService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'io.toprate.si.repository.CartRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cartService' defined in file [C:\Users\Dekisugi Hidetoshi\Desktop\Quanlibanhang\target\classes\io\toprate\si\service\cartService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'io.toprate.si.repository.CartRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'io.toprate.si.repository.CartRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+
